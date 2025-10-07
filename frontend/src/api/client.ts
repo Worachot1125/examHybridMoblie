@@ -2,7 +2,7 @@ import axios from 'axios';
 import { Platform } from 'react-native';
 
 const PORT = 8000;
-const LAN = `http://192.168.0.190:${PORT}`; // <-- IP คอมคุณ
+const LAN = `http://192.168.0.190:${PORT}`;
 
 const getBaseURL = () => {
   // ถ้าใช้ Emulator Android → 10.0.2.2; ถ้าดีไวซ์จริง → ใช้ LAN
