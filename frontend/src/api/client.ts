@@ -5,9 +5,8 @@ const PORT = 8000;
 const LAN = `http://192.168.0.190:${PORT}`;
 
 const getBaseURL = () => {
-  // ถ้าใช้ Emulator Android → 10.0.2.2; ถ้าดีไวซ์จริง → ใช้ LAN
   if (Platform.OS === 'android') return __DEV__ ? LAN : LAN;
-  return __DEV__ ? LAN : LAN; // iOS จริงก็ใช้ LAN
+  return __DEV__ ? LAN : LAN;
 };
 
 export const api = axios.create({
